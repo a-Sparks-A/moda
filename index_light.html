@@ -6,7 +6,7 @@
     <title>Главная страница</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="light_theme">
     <header>
       <div class="container">
         <img src="images/logo (1)-Photoroom.png" alt="Логотип" class="logo" />
@@ -66,51 +66,56 @@
 
       <section class="search">
         <div class="container">
-            <div class="search__content">
-                <label for="search_input">Быстрый поиск по жанрам</label>
-                <input type="text" name="search_input" list="genres" class="search_input" placeholder="Найти жанр.."/>
+          <div class="search__content">
+            <label for="search_input">Быстрый поиск по жанрам</label>
+            <input
+              type="text"
+              name="search_input"
+              list="genres"
+              class="search_input"
+              placeholder="Найти жанр.."
+            />
 
-                <datalist id="genres">
-                    <option value="game">Игра</option>
-                    <option value="game">Игра 2</option>
-                    <option value="game">Игра 3</option>
-                </datalist>
+            <datalist id="genres">
+              <option value="game">Игра</option>
+              <option value="game">Игра 2</option>
+              <option value="game">Игра 3</option>
+            </datalist>
 
-                <button type="submit" class="search__btn">Найти</button>
-            </div>
+            <button type="submit" class="search__btn">Найти</button>
+          </div>
         </div>
       </section>
 
-       <section class="benefits">
+      <section class="benefits">
         <div class="container">
           <div class="benefits__content">
             <h2 class="benefits__title">Почему мы?</h2>
             <div class="benefit__grid">
               <div class="benefit__card">
                 <div class="benefit__icon">
-                  <img src="/images/icons8-ценник-в-долларах-80.png" alt="">
+                  <img src="/images/icons8-ценник-в-долларах-80.png" alt="" />
                 </div>
                 <h3>Привлекательные цены</h3>
               </div>
               <div class="benefit__card">
                 <div class="benefit__icon">
-                  <img src="/images/icons8-распродажа-50.png" alt="">
+                  <img src="/images/icons8-распродажа-50.png" alt="" />
                 </div>
                 <h3>Ежемесячные акции</h3>
               </div>
               <div class="benefit__card">
                 <div class="benefit__icon">
-                  <img src="/images/icons8-онлайн-поддержка-50.png" alt="">
+                  <img src="/images/icons8-онлайн-поддержка-50.png" alt="" />
                 </div>
                 <h3>Круглосуточная поддержка</h3>
               </div>
               <div class="benefit__card">
                 <div class="benefit__icon">
-                  <img src="/images/icons8-купить-48.png" alt="">
+                  <img src="/images/icons8-купить-48.png" alt="" />
                 </div>
                 <h3>Быстрая покупка</h3>
               </div>
-
             </div>
           </div>
         </div>
@@ -125,7 +130,7 @@
               <div class="card__genre">Horror</div>
               <div class="card_ent">Entert. Corp.</div>
               <div class="rating">
-                <div class="stars-fill" style="width: 70%;"></div>
+                <div class="stars-fill" style="width: 70%"></div>
               </div>
               <div class="card__footer">
                 <div class="card__price">1234</div>
@@ -133,12 +138,15 @@
               </div>
             </div>
             <div class="card__content">
-              <img src="/images/45609f418a2bb8a4e15930061fd5752c.jpg" alt="Game 2" />
+              <img
+                src="/images/45609f418a2bb8a4e15930061fd5752c.jpg"
+                alt="Game 2"
+              />
               <div class="card__title">Title Game</div>
               <div class="card__genre">survive</div>
               <div class="card_ent">Entert. Corp.</div>
               <div class="rating">
-                <div class="stars-fill" style="width: 30%;"></div>
+                <div class="stars-fill" style="width: 30%"></div>
               </div>
               <div class="card__footer">
                 <div class="card__price">1234</div>
@@ -151,7 +159,7 @@
               <div class="card__genre">simulator</div>
               <div class="card_ent">Entert. Corp.</div>
               <div class="rating">
-                <div class="stars-fill" style="width: 100%;"></div>
+                <div class="stars-fill" style="width: 100%"></div>
               </div>
               <div class="card__footer">
                 <div class="card__price">1234</div>
@@ -164,7 +172,7 @@
               <div class="card__genre">Comedy</div>
               <div class="card_ent">Entert. Corp.</div>
               <div class="rating">
-                <div class="stars-fill" style="width: 55%;"></div>
+                <div class="stars-fill" style="width: 55%"></div>
               </div>
               <div class="card__footer">
                 <div class="card__price">1234</div>
@@ -177,7 +185,7 @@
               <div class="card__genre">Indi</div>
               <div class="card_ent">Entert. Corp.</div>
               <div class="rating">
-                <div class="stars-fill" style="width: 89%;"></div>
+                <div class="stars-fill" style="width: 89%"></div>
               </div>
               <div class="card__footer">
                 <div class="card__price">1234</div>
@@ -190,14 +198,26 @@
 
       <section class="partners">
         <div class="container">
-            <div class="partners__content">
-                <h2 class="partners__title">Наши партнеры</h2>
-                <div class="partners__flex">
-                    <img src="/images/icons8-партнеры-64 (1).png" alt="Logo Partner" class="partners__logo">
-                    <img src="/images/icons8-партнеры-64.png" alt="Logo Partner" class="partners__logo">
-                    <img src="/images/icons8-партнеры-64 (2).png" alt="Logo Partner" class="partners__logo">
-                </div>
+          <div class="partners__content">
+            <h2 class="partners__title">Наши партнеры</h2>
+            <div class="partners__flex">
+              <img
+                src="/images/icons8-партнеры-64 (1).png"
+                alt="Logo Partner"
+                class="partners__logo"
+              />
+              <img
+                src="/images/icons8-партнеры-64.png"
+                alt="Logo Partner"
+                class="partners__logo"
+              />
+              <img
+                src="/images/icons8-партнеры-64 (2).png"
+                alt="Logo Partner"
+                class="partners__logo"
+              />
             </div>
+          </div>
         </div>
       </section>
     </main>
@@ -205,28 +225,26 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
-           <div class="contacts">
-                <li>8 800 999 55 99</li>
-                <li>best@games.ru</li>
-            </div>
-            <div class="about_us">
-                <li>Клиентам</li>
-                <li>Партнерам</li>
-                <li>О нас</li>
-                <li>Контакты</li>
-            </div>
-            <div class="navigation">
-                <li><a href="Index.html">Главная</a></li>
-                <li><a href="register.html">Регистрация</a></li>
-                <li><a href="login.html">Вход</a></li>
-                <li><a href="profile.html">Личный кабинет</a></li>
-                <li><a href="#">Поиск</a></li>
-            </div> 
+          <div class="contacts">
+            <li>8 800 999 55 99</li>
+            <li>best@games.ru</li>
+          </div>
+          <div class="about_us">
+            <li>Клиентам</li>
+            <li>Партнерам</li>
+            <li>О нас</li>
+            <li>Контакты</li>
+          </div>
+          <div class="navigation">
+            <li><a href="Index.html">Главная</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+            <li><a href="login.html">Вход</a></li>
+            <li><a href="profile.html">Личный кабинет</a></li>
+            <li><a href="#">Поиск</a></li>
+          </div>
         </div>
-    </div>
-        <div class="footer__copy">&copy; BestGames Ent. 2026</div>
-        
-      
+      </div>
+      <div class="footer__copy">&copy; BestGames Ent. 2026</div>
     </footer>
   </body>
 </html>

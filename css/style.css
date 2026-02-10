@@ -18,10 +18,21 @@
     --bg-color: #1d1a37;
     --bg-card: #110f23;
     --text-color: #ffffff;
-    --text-muted: #bbbbbb;
+    --text-muted: #ececec;
     --border-color: #333;
     --accent-hover: #821cff;
     font-family: 'Monserrat';
+}
+
+.light_theme {
+    --accent-color: #9d4eff;
+    --bg-color: #e3e3e3;
+    --bg-card: #698790;
+    --text-color: #000000;
+    --text-muted: rgb(115, 115, 115);
+    --border-color: #a1a1a1;
+    --accent-hover: #821cff;
+    font-family: 'Arimo';
 }
 
 body {
@@ -49,14 +60,14 @@ ul {
     list-style: none;
 }
 
+li {
+    list-style: none;
+}
+
 img {
     max-width: 100%;
     display: block;
     object-fit: cover;
-}
-
-section {
-    padding: 20px;
 }
 
 .container {
@@ -95,7 +106,7 @@ header .container {
 
 
 .slider {
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 .slider__wrapper {
@@ -131,7 +142,8 @@ header .container {
     z-index: 2;
 }
 
-.slider__title {
+h2 .slider__title {
+    color: var(--text-color);
     font-size: 1.8rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -185,22 +197,23 @@ header .container {
 /* Быстрый поиск */
 
 .search {
-    max-width: 25%;
+    margin-bottom: 70px;
 }
 
 .search .container {
-    align-items: center;
+    display: flex;
     justify-content: center;
 }
 
 .search__content {
     display: flex;
     flex-direction: column;
+    width: 30%;
 }
 
 .search_input {
     height: 35px;
-
+    border-radius: 5px;
 }
 
 label {
@@ -216,6 +229,7 @@ label {
     cursor: pointer;
     margin-top: 5px;
     transition: 0.3s;
+    border-radius: 5px;
 }
 
 .search__btn:hover {
@@ -224,10 +238,20 @@ label {
 
 /* Преимущества */
 
+.benefits {
+    margin-bottom: 70px;
+}
+
 .benefit__grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
     gap: 20px;
+}
+
+.benefits__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .benefit__card {
@@ -236,6 +260,8 @@ label {
     border-radius: 10px;
     text-align: center;
     border: 1px solid var(--border-color);
+    color: var(--text-color);
+    width: 20%;
 }
 
 .benefit__icon {
@@ -246,6 +272,10 @@ label {
 }
 
 /* Раздел популярных игр */
+
+.popular {
+    margin-bottom: 70px;
+}
 
 .popular__card {
     display: flex;
@@ -283,6 +313,32 @@ label {
     font-size: 12px;
 }
 
+.rating {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rating::before {
+    content: "\2605\2605\2605\2605\2605";
+    display: block;
+}
+
+.stars-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    color: gold;
+}
+
+.stars-fill::before {
+    content: "\2605\2605\2605\2605\2605";
+    display: block;
+}
+
 .card__price {
     font-size: 20px;
     font-weight: bold;
@@ -295,6 +351,11 @@ label {
     height: 25px;
     width: 150px;
     text-align: center;
+    transition: 0.3s;
+}
+
+.card__btn:hover {
+    background-color: var(--accent-hover);
 }
 
 .card__footer {
@@ -304,3 +365,66 @@ label {
 }
 
 /* Партнеры */
+
+.partners__content {
+    margin-bottom: 70px;
+}
+
+.partners__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.partners__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partners__logo {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 20px 40px;
+    font-weight: bold;
+    width: 90px;
+}
+
+
+/* Подвал */
+
+footer {
+    background: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    padding: 40px 0 20px;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.footer .container {
+    width: 50%;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer li:hover {
+    color: var(--accent-color);
+}
+
+.footer__copy {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}

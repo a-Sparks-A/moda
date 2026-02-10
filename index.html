@@ -66,40 +66,52 @@
 
       <section class="search">
         <div class="container">
-          <input
-            type="text"
-            name="search_text"
-            id="search_text"
-            class="search_text"
-          />
+            <div class="search__content">
+                <label for="search_input">Быстрый поиск по жанрам</label>
+                <input type="text" name="search_input" list="genres" class="search_input" placeholder="Найти жанр.."/>
 
-          <datalist>
-            <option value="game">Игра</option>
-            <option value="game">Игра 2</option>
-            <option value="game">Игра 3</option>
-          </datalist>
+                <datalist id="genres">
+                    <option value="game">Игра</option>
+                    <option value="game">Игра 2</option>
+                    <option value="game">Игра 3</option>
+                </datalist>
 
-          <button type="submit" class="btn">Найти</button>
+                <button type="submit" class="search__btn">Найти</button>
+            </div>
         </div>
       </section>
 
-      <section class="benefition">
+       <section class="benefits">
         <div class="container">
-          <div class="ben__card">
-            <img src="/images/icons8-ценник-в-долларах-80.png" alt="" />
-            <h2 class="ben__title">Привлекательные цены</h2>
-          </div>
-          <div class="ben__card">
-            <img src="/images/icons8-распродажа-50.png" alt="" />
-            <h2 class="ben__title">Ежемесячные акции</h2>
-          </div>
-          <div class="ben__card">
-            <img src="/images/icons8-онлайн-поддержка-50.png" alt="" />
-            <h2 class="ben__title">Круглосуточная поддержка</h2>
-          </div>
-          <div class="ben__card">
-            <img src="/images/icons8-купить-48.png" alt="" />
-            <h2 class="ben__title">Быстрая покупка</h2>
+          <div class="benefits__content">
+            <h2 class="benefits__title">Почему мы?</h2>
+            <div class="benefit__grid">
+              <div class="benefit__card">
+                <div class="benefit__icon">
+                  <img src="/images/icons8-ценник-в-долларах-80.png" alt="">
+                </div>
+                <h3>Привлекательные цены</h3>
+              </div>
+              <div class="benefit__card">
+                <div class="benefit__icon">
+                  <img src="/images/icons8-распродажа-50.png" alt="">
+                </div>
+                <h3>Ежемесячные акции</h3>
+              </div>
+              <div class="benefit__card">
+                <div class="benefit__icon">
+                  <img src="/images/icons8-онлайн-поддержка-50.png" alt="">
+                </div>
+                <h3>Круглосуточная поддержка</h3>
+              </div>
+              <div class="benefit__card">
+                <div class="benefit__icon">
+                  <img src="/images/icons8-купить-48.png" alt="">
+                </div>
+                <h3>Быстрая покупка</h3>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
@@ -113,26 +125,32 @@
               <div class="card__genre">Horror</div>
               <div class="card_ent">Entert. Corp.</div>
               <div class="rating"></div>
-              <div class="card__price">1234</div>
-              <a href="catalog.html" class="card__btn">Подробнее</a>
+              <div class="card__footer">
+                <div class="card__price">1234</div>
+                <a href="catalog.html" class="card__btn">Подробнее</a>
+              </div>
             </div>
             <div class="card__content">
-              <img src="/images/flieder-wuchshoehe.jpg" alt="Game 2" />
+              <img src="/images/45609f418a2bb8a4e15930061fd5752c.jpg" alt="Game 2" />
               <div class="card__title">Title Game</div>
               <div class="card__genre">survive</div>
               <div class="card_ent">Entert. Corp.</div>
               <div class="rating"></div>
-              <div class="card__price">1222</div>
-              <a href="catalog.html" class="card__btn">Подробнее</a>
+              <div class="card__footer">
+                <div class="card__price">1234</div>
+                <a href="catalog.html" class="card__btn">Подробнее</a>
+              </div>
             </div>
             <div class="card__content">
-              <img src="/images/flieder-wuchshoehe.jpg" alt="Game 3" />
+              <img src="/images/Райнер действуем.png" alt="Game 3" />
               <div class="card__title">Title Game</div>
               <div class="card__genre">simulator</div>
               <div class="card_ent">Entert. Corp.</div>
               <div class="rating"></div>
-              <div class="card__price">664</div>
-              <a href="catalog.html" class="card__btn">Подробнее</a>
+              <div class="card__footer">
+                <div class="card__price">1234</div>
+                <a href="catalog.html" class="card__btn">Подробнее</a>
+              </div>
             </div>
             <div class="card__content">
               <img src="/images/flieder-wuchshoehe.jpg" alt="Game 4" />
@@ -140,8 +158,10 @@
               <div class="card__genre">Comedy</div>
               <div class="card_ent">Entert. Corp.</div>
               <div class="rating"></div>
-              <div class="card__price">134</div>
-              <a href="catalog.html" class="card__btn">Подробнее</a>
+              <div class="card__footer">
+                <div class="card__price">1234</div>
+                <a href="catalog.html" class="card__btn">Подробнее</a>
+              </div>
             </div>
             <div class="card__content">
               <img src="/images/flieder-wuchshoehe.jpg" alt="Game 5" />
@@ -149,8 +169,10 @@
               <div class="card__genre">Indi</div>
               <div class="card_ent">Entert. Corp.</div>
               <div class="rating"></div>
-              <div class="card__price">534</div>
-              <a href="catalog.html" class="card__btn">Подробнее</a>
+              <div class="card__footer">
+                <div class="card__price">1234</div>
+                <a href="catalog.html" class="card__btn">Подробнее</a>
+              </div>
             </div>
           </div>
         </div>

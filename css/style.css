@@ -11,12 +11,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 :root {
     --accent-color: #9d4eff;
     --bg-color: #1d1a37;
+    --bg-card: #110f23;
     --text-color: #ffffff;
     --text-muted: #bbbbbb;
     --border-color: #333;
@@ -55,8 +55,11 @@ img {
     object-fit: cover;
 }
 
+section {
+    padding: 20px;
+}
+
 .container {
-    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -178,3 +181,126 @@ header .container {
 .slider__nav .slider__nav--active {
     background-color: var(--accent-color);
 }
+
+/* Быстрый поиск */
+
+.search {
+    max-width: 25%;
+}
+
+.search .container {
+    align-items: center;
+    justify-content: center;
+}
+
+.search__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.search_input {
+    height: 35px;
+
+}
+
+label {
+    font-size: 20px;
+}
+
+.search__btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-weight: bold;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.search__btn:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Преимущества */
+
+.benefit__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.benefit__card {
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.benefit__icon {
+    width: 60px;
+    height: 60px;
+    filter: invert(1);
+    margin: 0 auto 15px;
+}
+
+/* Раздел популярных игр */
+
+.popular__card {
+    display: flex;
+}
+
+.card__content {
+    position: relative;
+    background-color: var(--bg-card);
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 5px;
+}
+
+.card__content:hover {
+    box-shadow: 3px 3px 3px #28244b;
+}
+
+.card__content img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card__title {
+    font-weight: bold;
+}
+
+.card__genre {
+    color: var(--text-muted);
+}
+
+.card_ent {
+    font-size: 12px;
+}
+
+.card__price {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.card__btn {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    height: 25px;
+    width: 150px;
+    text-align: center;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Партнеры */
